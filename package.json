@@ -5,8 +5,7 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "next build && npm run postbuild",
-    "postbuild": "cp -r out build || xcopy /E /I /Y out build",
+    "build": "next build && cp -r out build",
     "start": "next start",
     "lint": "next lint"
   },
